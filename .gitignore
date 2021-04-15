@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+mapping_demo/mapping_demo.vcxproj.filters
+mapping_demo/mapping_demo.vcxproj
+mapping_demo/mapping_demo.vcxproj.filters

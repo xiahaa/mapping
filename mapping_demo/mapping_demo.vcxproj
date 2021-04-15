@@ -75,14 +75,22 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\include;C:\Users\xiahaa\3rdparty\Pangolin\include;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\include;C:\Users\xiahaa\3rdparty\Eigen\eigen-eigen-67e894c6cd8f\eigen-eigen-67e894c6cd8f;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\xiahaa\3rdparty\Pangolin\lib;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\lib;C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\include;C:\Users\xiahaa\3rdparty\Pangolin\include;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\include;C:\Users\xiahaa\3rdparty\Eigen\eigen-eigen-67e894c6cd8f\eigen-eigen-67e894c6cd8f;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\xiahaa\3rdparty\Pangolin\lib;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\lib;C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -91,10 +99,12 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\include;C:\Users\xiahaa\3rdparty\Pangolin\include;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\include;C:\Users\xiahaa\3rdparty\Eigen\eigen-eigen-67e894c6cd8f\eigen-eigen-67e894c6cd8f;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\xiahaa\3rdparty\Pangolin\lib;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\lib;C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -104,13 +114,27 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\include;C:\Users\xiahaa\3rdparty\Pangolin\include;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\include;C:\Users\xiahaa\3rdparty\Eigen\eigen-eigen-67e894c6cd8f\eigen-eigen-67e894c6cd8f;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\xiahaa\3rdparty\Pangolin\lib;C:\Users\xiahaa\3rdparty\opencv-3.1.0\build\install\lib;C:\Users\xiahaa\3rdparty\pangolin_dependencies\glew-2.1.0-win32\glew-2.1.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="depthThread.cpp" />
+    <ClCompile Include="fileio.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mappingThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="datatype.h" />
+    <ClInclude Include="depthThread.h" />
+    <ClInclude Include="fileio.h" />
+    <ClInclude Include="mappingThread.h" />
+    <ClInclude Include="safe_queue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
